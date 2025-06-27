@@ -1,10 +1,10 @@
 :root {
-    --primary: #ff2a6d;
-    --primary-dark: #d10054;
+    --primary: #003366;
+    --primary-dark: #0f52ba;
     --secondary: #05d9e8;
-    --accent: #d300c5;
-    --dark: #0d0221;
-    --dark-light: #1a1a3d;
+    --accent: #ff073a;
+    --dark: #0a0a14f2;
+    --dark-light: #d3d3d3;
     --light: #f8f9fa;
     --highlight: #ffd300;
 }
@@ -17,18 +17,18 @@
 }
 
 body {
-    background: linear-gradient(135deg, var(--dark), var(--dark-light), #24243e);
-    color: var(--light);
+    background: linear-gradient(135deg, var(--light), var(--dark-light));
+    color: var(--dark --dark-light);
     min-height: 100vh;
     background-attachment: fixed;
 }
 
 /* Navbar */
 .navbar {
-    background: rgba(13, 2, 33, 0.95);
+    background: var(--dark);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgba(255, 42, 109, 0.3);
+    border-bottom: 1px solid rgba(255, 42, 109, 0.7);
     padding: 0.8rem 1rem;
 }
 
@@ -37,7 +37,7 @@ body {
     align-items: center;
     font-weight: 700;
     font-size: 1.8rem;
-    color: var(--light);
+    color: var(--dark);
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -50,7 +50,7 @@ body {
 
 .navbar-brand:hover {
     color: var(--primary);
-    text-shadow: 0 0 10px rgba(255, 42, 109, 0.7);
+    text-shadow: 0 0 10px var(--primary-dark);
 }
 
 .nav-link {
@@ -67,10 +67,11 @@ body {
     background: linear-gradient(90deg, var(--primary), var(--primary-dark));
     color: white !important;
     transform: translateY(-2px);
-    box-shadow: 0 0 15px rgba(255, 42, 109, 0.5);
+    box-shadow: 0 0 15px var(--primary);
 }
 
 .dropdown-menu {
+    padding: 0 6px 0 0;
     background: rgba(26, 26, 46, 0.95);
     border: 1px solid rgba(255, 42, 109, 0.2);
     border-radius: 8px;
@@ -89,7 +90,7 @@ body {
 .dropdown-item:hover {
     background: linear-gradient(90deg, var(--primary), var(--primary-dark));
     color: white !important;
-    box-shadow: 0 0 10px rgba(255, 42, 109, 0.5);
+    box-shadow: 0 0 10px var(--primary);
 }
 
 /* Search Form */
@@ -110,7 +111,7 @@ body {
 
 .search-form input:focus {
     background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 0 0 3px rgba(255, 42, 109, 0.3);
+    box-shadow: 0 0 0 3px var(--primary-dark);
     width: 300px;
     outline: none;
 }
@@ -133,7 +134,7 @@ body {
 
 .search-form button:hover {
     transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 42, 109, 0.7);
+    box-shadow: 0 0 15px var(--primary-dark);
 }
 
 /* Login Button */
@@ -144,7 +145,7 @@ body {
     padding: 8px 20px;
     font-weight: 600;
     transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(255, 42, 109, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     color: white;
     display: flex;
     align-items: center;
@@ -152,7 +153,7 @@ body {
 
 .btn-login:hover {
     transform: translateY(-3px);
-    box-shadow: 0 0 20px rgba(255, 42, 109, 0.6);
+    box-shadow: 0 0 20px var(--primary-dark);
     color: white;
 }
 
@@ -218,7 +219,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 2px 10px var(--accent);
 }
 
 .midman p {
@@ -235,14 +236,14 @@ body {
     padding: 12px 35px;
     font-size: 1.1rem;
     font-weight: 600;
-    box-shadow: 0 0 15px rgba(255, 42, 109, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
 }
 
 .btn-midman:hover {
     transform: translateY(-5px);
     color: white;
-    box-shadow: 0 0 15px rgba(255, 42, 109, 0.5);
+    box-shadow: 0 0 15px var(--primary);
 }
 
 /* Kategori Section */
@@ -258,7 +259,7 @@ body {
     font-weight: 700;
     display: inline-block;
     padding: 0 20px;
-    background: var(--light);
+    background: var(--dark);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -272,7 +273,7 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: var(--light);
+    background: var(--primary-dark);
     border-radius: 2px;
 }
 
@@ -281,19 +282,19 @@ body {
 }
 
 .kategori-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.4s;
     height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
 }
 
 .kategori-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(106, 17, 203, 0.5);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .kategori-img {
@@ -312,14 +313,14 @@ body {
 }
 
 .kategori-content p {
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--dark);
     margin-bottom: 15px;
 }
 
 .btn-kategori {
     background: transparent;
     border: 2px solid var(--secondary);
-    color: var(--light);
+    color: var(--dark);
     border-radius: 50px;
     padding: 6px 20px;
     font-weight: 500;
@@ -338,19 +339,19 @@ body {
 }
 
 .produk-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.4s;
     height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
 }
 
 .produk-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 107, 107, 0.5);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .produk-img {
@@ -368,7 +369,7 @@ body {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: linear-gradient(90deg, var(--dark), #ff0000);
+    background: linear-gradient(90deg, var(--accent));
     padding: 5px 15px;
     border-radius: 50px;
     font-size: 0.8rem;
@@ -378,7 +379,7 @@ body {
 .produk-title {
     font-weight: 700;
     margin-bottom: 5px;
-    color: white;
+    color: var(--dark);
 }
 
 .produk-rating {
@@ -388,7 +389,7 @@ body {
 
 .btn-produk {
     background: linear-gradient(90deg, var(--primary), var(--primary-dark));
-    color: rgba(255, 255, 255, 0.808);
+    color: var(--light);
     border: none;
     border-radius: 50px;
     padding: 8px 20px;
@@ -399,22 +400,27 @@ body {
 
 .btn-produk:hover {
     transform: translateY(-3px);
-    box-shadow: 0 0 15px rgba(255, 42, 109, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 
 .footer {
-    background: rgba(10, 10, 20, 0.95);
+    background: var(--dark);
     padding: 60px 0 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-title {
+    color: var(--dark-light);
     font-size: 1.3rem;
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 10px;
+}
+
+.footer-p {
+    color: var(--dark-light);
 }
 
 .footer-title::after {
@@ -424,11 +430,12 @@ body {
     left: 0;
     width: 50px;
     height: 3px;
-    background: var(--light);
+    background: var(--primary-dark);
     border-radius: 2px;
 }
 
 .footer-links li {
+    color: var(--dark-light);
     margin-bottom: 12px;
     list-style: none;
 }
