@@ -8,7 +8,7 @@
     --light: #f8f9fa;
     --highlight: #ffd300;
 }
-
+ 
 * {
     margin: 0;
     padding: 0;
@@ -230,8 +230,8 @@ body {
 
 .btn-midman {
     background: linear-gradient(90deg, var(--primary), var(--primary-dark));
-    color: white;
-    border: none;
+    color: var(--light);
+    border: var(--dark-light);
     border-radius: 50px;
     padding: 12px 35px;
     font-size: 1.1rem;
@@ -242,7 +242,7 @@ body {
 
 .btn-midman:hover {
     transform: translateY(-5px);
-    color: white;
+    color: var(--light);
     box-shadow: 0 0 15px var(--primary);
 }
 
@@ -282,12 +282,12 @@ body {
 }
 
 .kategori-card {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 70, 255, 0.1);
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.4s;
     height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--dark-light);
     backdrop-filter: blur(10px);
 }
 
@@ -319,7 +319,7 @@ body {
 
 .btn-kategori {
     background: transparent;
-    border: 2px solid var(--secondary);
+    border: 2px solid var(--primary-dark);
     color: var(--dark);
     border-radius: 50px;
     padding: 6px 20px;
@@ -339,12 +339,12 @@ body {
 }
 
 .produk-card {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 70, 255, 0.1);
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.4s;
     height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--light);
     backdrop-filter: blur(10px);
 }
 
@@ -358,7 +358,7 @@ body {
     height: 180px;
     width: 100%;
     object-fit: cover;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid var(--accent);
 }
 
 .produk-content {
