@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Games - SpawnBridge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/jasa.css">
+    <link rel="icon" href="/assets/images/logo1.jpeg">
+</head>
+<body>
+    <!-- Navbar -->  
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/icon1.png" alt="SpawnBridge Logo">
+                <span>SpawnBridge</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-list me-1"></i> Kategori
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../assets/mobile.html"><i class="fas fa-mobile-alt me-2"></i>Mobile Games</a></li>
+                            <li><a class="dropdown-item" href="../assets/pc.html"><i class="fas fa-desktop me-2"></i>PC Games</a></li>
+                            <li><a class="dropdown-item active" href="../assets/jasa.html"><i class="fas fa-user-tie me-2"></i>Joki/Jasa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../assets/rekber.html"><i class="fa-solid fa-suitcase"></i> Rekber</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../assets/panduan.html"><i class="fas fa-info-circle me-1"></i> Panduan</a>
+                    </li>
+                </ul>
+                <form class="d-flex search-form me-3">
+                    <input class="form-control" type="search" placeholder="Cari game, item, jasa..." aria-label="Search">
+                    <button class="btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a href="../assets/login.html" class="btn btn-login">
+                    <i class="fas fa-user me-2"></i>Login/Daftar
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Jasa Games Header -->
+    <section class="jasa-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Jasa Games Marketplace</h1>
+                <p>Jual beli jasa push rank, leveling, coaching, dan layanan lainnya untuk game Mobile/PC favoritmu dengan harga terbaik dan transaksi aman</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PC Games Grid -->
+    <section class="jasa-games">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pilih Game PC Favoritmu</h2>
+                <p>Temukan berbagai produk untuk jasa game populer</p>
+            </div>
+            <div class="row g-4">
+                <!-- Dota 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/dota2.png" alt="Dota 2">
+                            <div class="game-badge">Top Seller</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Dota 2 Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> MOBA</span>
+                                <span><i class="fas fa-users"></i> 10M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Valorant -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/valo.jpg" alt="Valorant">
+                            <div class="game-badge">Trending</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Valorant Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> FPS</span>
+                                <span><i class="fas fa-users"></i> 15M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apex Legends -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/apex.png" alt="Apex Legends">
+                            <div class="game-badge">Popular</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Apex Legends Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> Battle Royale</span>
+                                <span><i class="fas fa-users"></i> 8M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- World of Warcraft -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/wow.jpg" alt="World of Warcraft">
+                            <div class="game-badge">MMORPG</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>World of Warcraft Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> RPG</span>
+                                <span><i class="fas fa-users"></i> 5M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dragon Nest Classic -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/dn.jpeg" alt="Dragon Nest Classic">
+                            <div class="game-badge">Classic</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Dragon Nest Classic Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> Action RPG</span>
+                                <span><i class="fas fa-users"></i> 1M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Counter-Strike 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/cs2.jpg" alt="Counter-Strike 2">
+                            <div class="game-badge">Esports</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Counter-Strike 2 Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> FPS</span>
+                                <span><i class="fas fa-users"></i> 12M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- League of Legends -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/lol.png" alt="League of Legends">
+                            <div class="game-badge">Popular</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>League of Legends Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> MOBA</span>
+                                <span><i class="fas fa-users"></i> 20M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point Blank -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/pb.jpg" alt="Point Blank">
+                            <div class="game-badge">FPS</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Point Blank Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> FPS</span>
+                                <span><i class="fas fa-users"></i> 3M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New World -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/nw.png" alt="New World">
+                            <div class="game-badge">MMO</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>New World Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> MMORPG</span>
+                                <span><i class="fas fa-users"></i> 2M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Path of Exile 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/poe2.png" alt="Path of Exile 2">
+                            <div class="game-badge">New</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Path of Exile 2 Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> ARPG</span>
+                                <span><i class="fas fa-users"></i> Coming Soon</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Mobile Legends -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/ml.jpg" alt="Mobile Legends">
+                            <div class="game-badge">Top Seller</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Mobile Legends Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> MOBA</span>
+                                <span><i class="fas fa-users"></i> 100M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honor of Kings -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/hok.jpg" alt="Honor of Kings">
+                            <div class="game-badge">Trending</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Honor of Kings Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> MOBA</span>
+                                <span><i class="fas fa-users"></i> 80M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ragnarok X -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/rox.jpg" alt="Ragnarok X">
+                            <div class="game-badge">MMORPG</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Ragnarok X Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> RPG</span>
+                                <span><i class="fas fa-users"></i> 10M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Free Fire -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/ff.png" alt="Free Fire">
+                            <div class="game-badge">Popular</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Free Fire Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> Battle Royale</span>
+                                <span><i class="fas fa-users"></i> 150M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PUBG Mobile -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/pubg.jpg" alt="PUBG Mobile">
+                            <div class="game-badge">Esports</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>PUBG Mobile Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> Battle Royale</span>
+                                <span><i class="fas fa-users"></i> 120M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toram Online -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/toram.jpeg" alt="Toram Online">
+                            <div class="game-badge">RPG</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Toram Online Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> MMORPG</span>
+                                <span><i class="fas fa-users"></i> 5M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lineage 2M -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/l2m.png" alt="Lineage 2M">
+                            <div class="game-badge">MMORPG</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Lineage 2M Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> RPG</span>
+                                <span><i class="fas fa-users"></i> 20M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Odin: Valhalla Rising -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="../assets/images/odin.jpeg" alt="Odin: Valhalla Rising">
+                            <div class="game-badge">New</div>
+                        </div>
+                        <div class="game-content">
+                            <h3>Odin: Valhalla Rising Service</h3>
+                            <div class="game-info">
+                                <span><i class="fas fa-gamepad"></i> MMORPG</span>
+                                <span><i class="fas fa-users"></i> 15M+</span>
+                            </div>
+                            <a href="#" class="btn btn-game">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="footer-title">SpawnBridge</h3>
+                    <p class="footer-p">Marketplace teraman dan terpercaya untuk kebutuhan gaming Anda. Kami menyediakan top up game, item, dan jasa gaming dengan harga terbaik.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>                
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h3 class="footer-title">Produk</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Mobile Games</a></li>
+                        <li><a href="#">PC Games</a></li>
+                        <li><a href="#">Joki & Jasa</a></li>
+                        <li><a href="#">Voucher Game</a></li>
+                        <li><a href="#">Item Marketplace</a></li>
+                    </ul>
+                </div>                
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h3 class="footer-title">Bantuan</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Cara Pembelian</a></li>
+                        <li><a href="#">Pusat Bantuan</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>                
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h3 class="footer-title">Kontak Kami</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope me-2"></i> support@spawnbridge.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +62 22 1234 5678</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Bandung, Indonesia</li>
+                    </ul>
+                </div>
+            </div>            
+            <div class="copyright">
+                <p>&copy; 2025 SpawnBridge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
