@@ -26,9 +26,9 @@ body {
 /* Navbar */
 .navbar {
     background: var(--dark);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgba(255, 42, 109, 0.7);
+    border-bottom: 1px solid var(--accent);
     padding: 0.8rem 1rem;
 }
 
@@ -42,7 +42,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 .navbar-brand img {
     width: 50px;
     padding: 5px;
@@ -65,18 +64,18 @@ body {
 .nav-link:hover, 
 .nav-link.active {
     background: linear-gradient(90deg, var(--primary), var(--primary-dark));
-    color: white !important;
+    color: var(--light) !important;
     transform: translateY(-2px);
     box-shadow: 0 0 15px var(--primary);
 }
 
 .dropdown-menu {
-    padding: 0 6px 0 0;
+    padding: 0 9px 0 0;
     background: rgba(26, 26, 46, 0.95);
-    border: 1px solid rgba(255, 42, 109, 0.2);
+    border: 1px solid var(--accent);
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
 }
 
 .dropdown-item {
@@ -101,7 +100,7 @@ body {
 
 .search-form input {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 42, 109, 0.3);
+    border: 1px solid var(--accent);
     color: white;
     border-radius: 50px;
     padding: 10px 20px;
@@ -111,7 +110,8 @@ body {
 
 .search-form input:focus {
     background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 0 0 3px var(--primary-dark);
+    box-shadow: 0 0 0 3px var(--primary);
+    color: var(--light);
     width: 300px;
     outline: none;
 }
@@ -135,6 +135,7 @@ body {
 .search-form button:hover {
     transform: translateY(-50%) scale(1.1);
     box-shadow: 0 0 15px var(--primary-dark);
+    color: var(--accent);
 }
 
 /* Login Button */
@@ -157,11 +158,6 @@ body {
     color: white;
 }
 
-/* Toggler Icon */
-.navbar-toggler {
-    border: 1px solid rgba(255, 42, 109, 0.3);
-}
-
 /* Responsive */
 @media (max-width: 992px) {
     .search-form {
@@ -180,7 +176,7 @@ body {
     .navbar-nav {
         margin-top: 15px;
     }
-}
+    }
 
 /* Footer */
 
