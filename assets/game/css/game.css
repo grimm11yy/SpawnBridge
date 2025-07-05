@@ -586,4 +586,9 @@ body {
     .message {
         max-width: 90%;
     }
+
+    .image-content img {
+        width: 100%;
+        height: auto;
+    }
 }
