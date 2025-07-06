@@ -493,6 +493,7 @@ body {
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 10px;
+    overflow-wrap: break-word;
 }
 
 .image-content {
@@ -584,6 +585,10 @@ body {
     }
     
     .message {
+        max-width: 90%;
+    }
+
+    .message-content {
         max-width: 90%;
     }
 
