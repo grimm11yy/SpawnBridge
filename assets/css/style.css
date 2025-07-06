@@ -351,6 +351,24 @@ body {
     color: var(--dark);
 }
 
+.produk-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+.produk-info span {
+    display: flex;
+    align-items: center;
+}
+
+.produk-info i {
+    margin-right: 5px;
+    color: var(--primary);
+}
+
 .btn-produk {
     background: linear-gradient(90deg, var(--primary), var(--primary-dark));
     color: var(--light);
