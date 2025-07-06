@@ -351,11 +351,6 @@ body {
     color: var(--dark);
 }
 
-.produk-rating {
-    color: #ffc107;
-    margin-bottom: 10px;
-}
-
 .btn-produk {
     background: linear-gradient(90deg, var(--primary), var(--primary-dark));
     color: var(--light);
@@ -439,7 +434,7 @@ body {
 }
 
 .social-icon:hover {
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    background: linear-gradient(90deg, var(--light), var(--dark-light));
     transform: translateY(-3px);
 }
 
