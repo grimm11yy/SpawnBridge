@@ -1,4 +1,4 @@
-:root {
+a:root {
     --primary: #003366;
     --primary-dark: #0f52ba;
     --secondary: #05d9e8;
@@ -245,7 +245,7 @@ body {
 }
 
 .social-icon:hover {
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    background: linear-gradient(90deg, var(--light), var(--dark-light));
     transform: translateY(-3px);
 }
 
