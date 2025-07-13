@@ -72,6 +72,9 @@ body {
 .theme-toggle .fa-sun {
     opacity: 0;
 }
+.form-control {
+    margin: 5px -5px 0 5px
+}
 .search-form button {
     transition: all 0.3s ease;
 }
@@ -81,6 +84,7 @@ body {
 .navbar .btn-login {
     background-color: var(--pink-accent);
     color: var(--text-dark);
+    margin-left: 15px;
     border: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -518,7 +522,7 @@ body.dark-mode .announcement-date {
   
   
 /* RESPONSIVE MOBILE FIX */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     html, body {
         overflow-x: hidden;
     }
@@ -529,7 +533,7 @@ body.dark-mode .announcement-date {
     .navbar-brand span {
         font-size: 1rem;
     }
-    .container,
+    .container-fluid,
     .section-title,
     .section-title2,
     .announcement-container {
@@ -573,6 +577,15 @@ body.dark-mode .announcement-date {
     }
     .midman {
         padding: 40px 0;
+    }
+    .populer-produk .row > div {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .produk-card {
+        margin-bottom: 30px;
     }
     .rekber-info {
         flex-direction: column;
