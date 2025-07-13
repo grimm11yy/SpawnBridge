@@ -10,8 +10,17 @@
     --text-light: #ffffff;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General Styles */
 body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;  
     background-color: var(--cream-bg);
     font-family: 'Orbitron', sans-serif;
     color: var(--text-dark);
@@ -65,6 +74,9 @@ body {
 .theme-toggle .fa-sun {
     opacity: 0;
 }
+.form-control {
+    margin: 5px -5px 0 5px
+}
 .search-form button {
     transition: all 0.3s ease;
 }
@@ -74,6 +86,7 @@ body {
 .navbar .btn-login {
     background-color: var(--pink-accent);
     color: var(--text-dark);
+    margin-left: 15px;
     border: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -355,36 +368,14 @@ body.dark-mode .step-card p {
     100% { background-position: 0% 50%; }
 }
 
-@media (max-width: 768px) {
-    .rekber-header { padding: 60px 0; }
-    .rekber-header h1 { font-size: 2rem; }
-    .price-table-container { padding: 15px; overflow-x: auto; }
-    .benefits-section .row > [class^="col-"] { padding-bottom: 15px; }
-    .step-card { flex-direction: column; text-align: center; height: auto; padding: 20px; }
-    .step-number { margin-right: 0; margin-bottom: 15px; }
-}
-
-@media (max-width: 576px) {
-    .navbar-brand span {
-        font-size: 1.2rem;
-    }
-    .ticket-btn.neon-glow {
-        font-size: 1rem;
-        padding: 12px 25px;
-    }
-    .rekber-header h1 {
-        font-size: 1.7rem;
-    }
-    .rekber-header p {
-        font-size: 1rem;
-    }
-    .benefit-card {
-        padding: 20px;
-    }
-}
-
 /* Responsive Navbar Fix */
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
+    .game-header h1 {
+        font-size: 2.5rem;
+    }
+    .game-header p {
+        font-size: 1.1rem;
+    }
     .navbar-collapse {
         flex-direction: column;
         align-items: flex-start;
@@ -406,5 +397,64 @@ body.dark-mode .step-card p {
         width: calc(100% - 20px);
         margin: 10px;
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .brand-logo {
+        width: 35px !important;
+        height: auto;
+    }
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+    .btn-login {
+        width: calc(100% - 30px);
+        margin: 10px auto;
+        text-align: center;
+    }
+    .rekber-header { 
+        padding: 60px 0; 
+    }
+    .rekber-header h1 { 
+        font-size: 2rem; 
+    }
+    .price-table-container { 
+        padding: 15px; overflow-x: auto; 
+    }
+    .benefits-section .row > [class^="col-"] { 
+        padding-bottom: 15px; 
+    }
+    .step-card { 
+        flex-direction: column; 
+        text-align: center; 
+        height: auto; 
+        padding: 20px; 
+    }
+    .step-number { 
+        margin-right: 0;
+        margin-bottom: 15px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand span {
+        font-size: 1.2rem;
+    }
+    .ticket-btn.neon-glow {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+    .rekber-header h1 {
+        font-size: 1.7rem;
+    }
+    .rekber-header p {
+        font-size: 1rem;
+    }
+    .benefit-card {
+        padding: 20px;
     }
 }
