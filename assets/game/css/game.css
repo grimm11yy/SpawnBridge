@@ -10,8 +10,17 @@
     --text-light: #ffffff;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General Styles */
 body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;  
     background-color: var(--cream-bg);
     font-family: 'Orbitron', sans-serif;
     color: var(--text-dark);
@@ -65,6 +74,9 @@ body {
 .theme-toggle .fa-sun {
     opacity: 0;
 }
+.form-control {
+    margin: 5px -5px 0 5px
+}
 .search-form button {
     transition: all 0.3s ease;
 }
@@ -74,6 +86,7 @@ body {
 .navbar .btn-login {
     background-color: var(--pink-accent);
     color: var(--text-dark);
+    margin-left: 15px;
     border: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -490,11 +503,13 @@ border: 1px solid var(--pink-accent);
 }
 .chat-input {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-}
+  }
 .chat-input input {
-    flex: 1;
+    flex: 1 1 auto;
+    min-width: 0;
     padding: 12px 15px;
     border-radius: 5px;
     border: none;
@@ -504,7 +519,8 @@ border: 1px solid var(--pink-accent);
 .chat-input input::placeholder {
     color: var(--text-dark);
 }
-.btn-send {
+.chat-input .btn-send {
+    flex: 0 0 auto;
     background: var(--lime-accent);
     color: var(--text-dark);
     border: none;
@@ -517,11 +533,12 @@ border: 1px solid var(--pink-accent);
     transition: all 0.3s;
     cursor: pointer;
 }
-.btn-send:hover {
+.chat-input .btn-send:hover {
     background: var(--lime-accent);
     color: var(--text-light);
 }
-.file-upload label {
+.chat-input .file-upload label {
+    flex: 0 0 auto;
     cursor: pointer;
     padding: 10px;
     color: var(--text-dark);
@@ -529,7 +546,7 @@ border: 1px solid var(--pink-accent);
     transition: all 0.3s;
     display: inline-block;
 }
-.file-upload label:hover {
+.chat-input .file-upload label:hover {
     background-color: var(--lime-accent);
     color: var(--text-light);
 }
@@ -558,42 +575,67 @@ border: 1px solid var(--pink-accent);
         margin: 10px;
         text-align: center;
     }
+    .chat-input {
+        width: auto;
+    }
 }
-
+ 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .brand-logo {
+        width: 35px !important;
+        height: auto;
+    }
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+    .btn-login {
+        width: calc(100% - 30px);
+        margin: 10px auto;
+        text-align: center;
+    }
     .game-header h1 {
         font-size: 2.5rem;
     }
-    
-    .account-card {
-        flex-direction: column;
-    }
-    
-    .account-card img {
-        width: 100%;
-        height: aut
-    }
-    
-    .boost-card {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .chat-messages {
-        height: 500px;
-    }
-    
     .message {
         max-width: 90%;
     }
-
     .message-content {
         max-width: 90%;
     }
-
     .image-content img {
         width: 100%;
         height: auto;
     }
+    .live-chat-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .chat-messages {
+        max-height: 400px;
+        height: auto;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .chat-input {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    .chat-input .file-upload {
+        flex: 0 0 auto;
+    }
+    .chat-input input {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .chat-input .btn-send {
+        flex: 0 0 auto;
+        height: 45px;
+        width: 50px;
+    }        
 }
