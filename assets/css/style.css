@@ -9,9 +9,16 @@
     --text-dark: #333333;
     --text-light: #ffffff;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* General Styles */
 body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;  
     background-color: var(--cream-bg);
     font-family: 'Orbitron', sans-serif;
     color: var(--text-dark);
@@ -493,6 +500,9 @@ body.dark-mode .announcement-date {
         margin-top: 10px;
         padding-left: 10px;
     }
+    .guide-card {
+        height: auto;
+    }
     .search-form {
         width: 100%;
         flex-direction: row;
@@ -505,35 +515,84 @@ body.dark-mode .announcement-date {
         text-align: center;
     }
 }
-
-/* Responsive Section Adjustments */
+  
+  
+/* RESPONSIVE MOBILE FIX */
 @media (max-width: 767.98px) {
-    .midman {
-        padding: 40px 0;
+    html, body {
+        overflow-x: hidden;
     }
-    
-    .section-title h2 {
-        font-size: 1.8rem;
+    .brand-logo {
+        width: 35px !important;
+        height: auto;
     }
-    
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+    .container,
+    .section-title,
+    .section-title2,
+    .announcement-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .col-md-4,
+    .col-sm-6,
+    .col-lg-6,
+    .col-md-4,
+    .col {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .kategori-content p,
     .produk-title {
         height: auto;
     }
-    
+    .kategori-img,
+    .produk-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    .section-title,
+    .section-title2 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .midman {
+        padding: 40px 0;
+    }
     .rekber-info {
         flex-direction: column;
         align-items: center;
     }
-    
     .announcement-card {
         flex-direction: column;
     }
-    
     .announcement-date {
         min-width: 100%;
         flex-direction: row;
         justify-content: space-around;
         padding: 10px 0;
+    }
+    .btn-login {
+        width: calc(100% - 30px);
+        margin: 10px auto;
+        text-align: center;
+    }
+    .guide-card {
+        height: auto;
     }
 }
