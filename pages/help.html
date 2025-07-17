@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Bantuan - SpawnBridge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/help.css">
+    <link rel="icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->  
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/icon2.png" alt="SpawnBridge Logo">
+                <span>SpawnBridge</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-list me-1"></i> Kategori
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="mobile.html"><i class="fas fa-mobile-alt me-2"></i>Mobile Games</a></li>
+                            <li><a class="dropdown-item" href="pc.html"><i class="fas fa-desktop me-2"></i>PC Games</a></li>
+                            <li><a class="dropdown-item" href="jasa.html"><i class="fas fa-user-tie me-2"></i>Joki/Jasa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rekber.html"><i class="fa-solid fa-suitcase"></i> Rekber</a>
+                    </li>
+                </ul>
+                <div class="theme-toggle-container me-2">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+                <form class="d-flex search-form me-3 position-relative">
+                    <div class="search-wrapper position-relative w-100">
+                        <input id="searchInput" class="form-control" type="search" placeholder="Cari game, item, jasa..." aria-label="Search">
+                        <div id="searchPopup" class="search-popup d-none"></div>
+                    </div>
+                    <button class="btn btn-search" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>                                
+                <a href="login.html" class="btn btn-login">
+                    <i class="fas fa-user me-2"></i>Login/Daftar
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    
+    <!-- Documentation Notice -->
+    <section class="documentation-notice">
+        <div class="container">
+            <p class="text-center text-muted">Halaman ini berisi panduan teknis dan prosedur penggunaan layanan. Untuk pertanyaan umum, silakan kunjungi halaman <a href="faq.html">FAQ</a>.</p>
+        </div>
+    </section>
+
+    <!-- User Guides Section -->
+    <section class="user-guides py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Panduan Pengguna</h2>
+            
+            <!-- Panduan Menjadi Seller -->
+            <div class="guide-section" id="seller">
+                <div class="guide-header">
+                    <i class="fas fa-store guide-icon"></i>
+                    <h3>Panduan Menjadi Seller</h3>
+                </div>
+                
+                <div class="guide-content">
+                    <h4>Langkah-langkah menjadi seller:</h4>
+                    <ol class="step-by-step">
+                        <li>
+                            <strong>Login ke akun SpawnBridge</strong>
+                            <p>Klik menu "Login/Daftar" pada menu kanan atas, jika belum memiliki akun harap daftar terlebih dahulu.</p>
+                        </li>
+                        <li>
+                            <strong>Daftar sebagai seller</strong>
+                            <p>Klik menu "Profil Saya" di profil akun Anda lalu pilih "Upgrade to Seller" dan lengkapi formulir pendaftaran.</p>
+                        </li>
+                        <li>
+                            <strong>Verifikasi identitas</strong>
+                            <p>Admin akan memverifikasi data yang telah Anda isi. (proses 1-3 hari kerja)</p>
+                        </li>
+                        <li>
+                            <strong>Aktifasi akun</strong>
+                            <p>Cek secara berkala pesan masuk pada profil anda untuk menerima hasil verifikasi data.</p>
+                        </li>
+                    </ol>                    
+                </div>
+            </div>
+            
+            <!-- Panduan Pembelian Produk -->
+            <div class="guide-section" id="pembelian">
+                <div class="guide-header">
+                    <i class="fas fa-shopping-cart guide-icon"></i>
+                    <h3>Panduan Pembelian Produk</h3>
+                </div>
+                
+                <div class="guide-content">
+                    <h4>Langkah-langkah Pembelian:</h4>
+                    <ol class="step-by-step">
+                        <li>
+                            <strong>Login ke akun SpawnBridge</strong>
+                            <p>Pastikan Anda sudah login menggunakan akun SpawnBridge yang valid.</p>
+                        </li>
+                        <li>
+                            <strong>Temukan produk</strong>
+                            <p>Jelajahi kategori untuk menemukan produk yang diinginkan.</p>
+                        </li>
+                        <li>
+                            <strong>Periksa detail produk</strong>
+                            <p>Baca dengan teliti deskripsi, spesifikasi, harga, dan kebijakan penjual.</p>
+                        </li>
+                        <li>
+                            <strong>Proses pembelian</strong>
+                            <p>Klik profil/username penjual lalu kirim pesan untuk melanjutkan dan memeriksa ketersediaan barang.</p>
+                        </li>
+                        <li>
+                            <strong>Deal</strong>
+                            <p>Jika penjual dan pemebeli telah setuju, maka transaksi akan dilakukan.</p>
+                        </li>
+                        <li>
+                            <strong>Gunakan Rekber</strong>
+                            <p>Gunakan Rekber untuk melakukan pembayaran dengan aman.</p>
+                        </li>
+                    </ol>
+                    <div class="note-box">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Perhatian : Selalu gunakan jasa Rekber untuk menghindari tindak penipuan.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Panduan Rekening Bersama -->
+            <div class="guide-section" id="rekber">
+                <div class="guide-header">
+                    <i class="fas fa-exchange-alt guide-icon"></i>
+                    <h3>Panduan Rekening Bersama</h3>
+                </div>
+                
+                <div class="guide-content">
+                    <h4>Alur Transaksi Rekber:</h4>
+                    <div class="flow-chart">
+                        <div class="flow-step">
+                            <div class="step-number">1</div>
+                            <p>Pembeli dan penjual sepakat transaksi</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-number">2</div>
+                            <p>Pembeli membuat permintaan rekber</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-number">3</div>
+                            <p>Admin verifikasi dan buat ruang transaksi</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-number">4</div>
+                            <p>Pembeli lakukan pembayaran ke rekening SpawnBridge</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-number">5</div>
+                            <p>Penjual kirim produk setelah pembayaran dikonfirmasi</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-number">6</div>
+                            <p>Pembeli verifikasi produk yang diterima</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-number">7</div>
+                            <p>Dana diteruskan ke penjual setelah konfirmasi</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="mt-4">Ketentuan Rekber:</h4>
+                    <ul class="policy-list">
+                        <li>Biaya akan dikenakan Charge Rp. 10.000 untuk transaksi refful</li>
+                        <li>Maksimal waktu penyelesaian transaksi adalah 7 hari</li>
+                        <li>Klaim masalah harus disertai bukti yang valid</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Panduan Pembayaran -->
+            <div class="guide-section" id="pembayaran">
+                <div class="guide-header">
+                    <i class="fas fa-money-bill-wave guide-icon"></i>
+                    <h3>Panduan Pembayaran</h3>
+                </div>
+                
+                <div class="guide-content">
+                    <h4>Metode Pembayaran yang Tersedia:</h4>
+                    <div class="payment-methods">
+                        <div class="payment-method">
+                            <i class="fas fa-university"></i>
+                            <span>Transfer Bank (BCA, Mandiri, BNI, BRI)</span>
+                        </div>
+                        <div class="payment-method">
+                            <i class="fas fa-wallet"></i>
+                            <span>E-Wallet (Dana, OVO, Gopay)</span>
+                        </div>
+                        <div class="payment-method">
+                            <i class="fas fa-qrcode"></i>
+                            <span>QRIS</span>
+                        </div>
+                        <div class="payment-method">
+                            <i class="fas fa-store"></i>
+                            <span>Alfamart/Indomaret</span>
+                        </div>
+                    </div>
+                    
+                    <h4 class="mt-4">Prosedur Pembayaran:</h4>
+                    <ol class="step-by-step">
+                        <li>Pilih metode pembayaran saat checkout</li>
+                        <li>Admin akan menampilkan detail pembayaran (nominal, nomor rekening/tujuan)</li>
+                        <li>Lakukan pembayaran sesuai instruksi</li>
+                        <li>Untuk pembayaran "WAJIB" mengunggah bukti pembayaran</li>
+                        <li>Tunggu konfirmasi admin melakukan pengecekan bukti pembayaran</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- Panduan Keamanan Akun -->
+            <div class="guide-section" id="keamanan">
+                <div class="guide-header">
+                    <i class="fas fa-user-shield guide-icon"></i>
+                    <h3>Panduan Keamanan Akun</h3>
+                </div>
+                
+                <div class="guide-content">
+                    <h4>Tips Mengamankan Akun:</h4>
+                    <div class="security-tips">
+                        <div class="security-tip">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <h5>Gunakan Password Kuat</h5>
+                                <p>Kombinasi huruf besar/kecil, angka, dan simbol minimal 8 karakter</p>
+                            </div>
+                        </div>
+                        <div class="security-tip">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h5>Aktifkan 2FA</h5>
+                                <p>Verifikasi dua langkah via SMS atau authenticator app</p>
+                            </div>
+                        </div>
+                        <div class="security-tip">
+                            <i class="fas fa-link"></i>
+                            <div>
+                                <h5>Waspada Phishing</h5>
+                                <p>Jangan klik link mencurigakan atau berikan data login</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="mt-4">Jika Akun Diretas:</h4>
+                    <ol class="step-by-step">
+                        <li>Segera ubah password akun Anda</li>
+                        <li>Jika tidak bisa login, gunakan fitur 'Lupa Password'</li>
+                        <li>Periksa dan batalkan semua transaksi mencurigakan</li>
+                        <li>Hubungi tim dukungan SpawnBridge segera</li>
+                        <li>Laporkan ke pihak berwajib jika terjadi kerugian finansial</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report Problem Section -->
+    <section class="report-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="report-card">
+                        <div class="guide-header">
+                            <i class="fas fa-exclamation-triangle guide-icon"></i>
+                            <h3>Laporkan Masalah</h3>
+                        </div>
+                        <p>Jika Anda mengalami masalah teknis atau menemukan penyalahgunaan platform</p>
+                        
+                        <form id="reportForm">
+                            <div class="mb-3">
+                                <label for="reportType" class="form-label">Jenis Laporan*</label>
+                                <select class="form-select" id="reportType" required>
+                                    <option value="" selected disabled>Pilih jenis laporan</option>
+                                    <option value="penipuan">Penipuan/Scam</option>
+                                    <option value="transaksi">Masalah Transaksi</option>
+                                    <option value="produk">Produk Tidak Sesuai</option>
+                                    <option value="akun">Masalah Akun</option>
+                                    <option value="rekber">Masalah Rekber</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="transactionId" class="form-label">Masukkan email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Masukkan email anda " required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="transactionId" class="form-label">ID Transaksi (jika ada)</label>
+                                <input type="text" class="form-control" id="transactionId" placeholder="Contoh: SB-2023-123456">
+                            </div>
+                            <div class="mb-3">
+                                <label for="reportDetails" class="form-label">Detail Laporan*</label>
+                                <textarea class="form-control" id="reportDetails" rows="4" required placeholder="Jelaskan masalah secara detail termasuk kronologi kejadian"></textarea>
+                            </div>                            
+                            <div class="mb-3">
+                                <label for="reportProof" class="form-label">Unggah Bukti Pendukung</label>
+                                <input type="file" class="form-control" id="reportProof" multiple>
+                                <div class="form-text">Format: JPG, PNG, PDF (maks. 5MB per file)</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Kirim Laporan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-card">
+                        <div class="guide-header">
+                            <i class="fas fa-headset guide-icon"></i>
+                            <h3>Hubungi Kami</h3>
+                        </div>
+                        <p>Tim dukungan kami siap membantu Anda</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h5>Email</h5>
+                                    <p>support@spawnbridge.com</p>
+                                    <a href="mailto:support@spawnbridge.com" class="btn btn-sm btn-outline-primary">Kirim Email</a>
+                                </div>
+                            </div>      
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h5>Telegram</h5>
+                                    <p>@SpawnBridgeSupport</p>
+                                    <a href="https://t.me/SpawnBridgeSupport" class="btn btn-sm btn-outline-info">Hubungi via Telegram</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Notifikasi Sukses (Custom Theme) -->
+    <div class="modal fade" id="reportSuccessModal" tabindex="-1" aria-labelledby="reportSuccessLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center custom-modal">
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title" id="reportSuccessLabel">Laporan Terkirim</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    Laporan anda berhasil terkirim.<br>
+                    Silakan tunggu maksimal 3x24 jam dan cek email anda secara berkala.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom-btn-ok" data-bs-dismiss="modal">Oke</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid px-3">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="footer-title">SpawnBridge</h3>
+                    <p class="footer-p">Marketplace teraman dan terpercaya untuk kebutuhan gaming Anda. Kami menyediakan jual beli produk game, item, dan jasa gaming dengan harga terbaik.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/SpawneBridge" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.x.com/SpawnBridge" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/SpawnBridge" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/SpawnBridge" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h3 class="footer-title">Produk</h3>
+                    <ul class="footer-links">
+                        <li><a href="mobile.html">Mobile Games</a></li>
+                        <li><a href="pc.html">PC Games</a></li>
+                        <li><a href="jasa.html">Joki & Jasa</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h3 class="footer-title">Bantuan</h3>
+                    <ul class="footer-links">
+                        <li><a href="help.html">Pusat Bantuan</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Syarat & Ketentuan</a></li>
+                        <li><a href="privacy.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h3 class="footer-title">Kontak Kami</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope me-2"></i> support@spawnbridge.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +62 22 1234 5678</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Bandung, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 SpawnBridge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>
