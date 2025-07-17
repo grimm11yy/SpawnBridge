@@ -6,8 +6,8 @@
     <title>SpawnBridge</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/images/logo1.jpeg">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -31,13 +31,13 @@
                             <i class="fas fa-list me-1"></i> Kategori
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="assets/mobile.html"><i class="fas fa-mobile-alt me-2"></i>Mobile Games</a></li>
-                            <li><a class="dropdown-item" href="assets/pc.html"><i class="fas fa-desktop me-2"></i>PC Games</a></li>
-                            <li><a class="dropdown-item" href="assets/jasa.html"><i class="fas fa-user-tie me-2"></i>Joki/Jasa</a></li>
+                            <li><a class="dropdown-item" href="pages/mobile.html"><i class="fas fa-mobile-alt me-2"></i>Mobile Games</a></li>
+                            <li><a class="dropdown-item" href="pages/pc.html"><i class="fas fa-desktop me-2"></i>PC Games</a></li>
+                            <li><a class="dropdown-item" href="pages/jasa.html"><i class="fas fa-user-tie me-2"></i>Joki/Jasa</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="assets/rekber.html"><i class="fa-solid fa-suitcase"></i> Rekber</a>
+                        <a class="nav-link" href="pages/rekber.html"><i class="fa-solid fa-suitcase"></i> Rekber</a>
                     </li>
                 </ul>
                 <div class="theme-toggle-container me-2">
@@ -46,13 +46,16 @@
                         <i class="fas fa-sun"></i>
                     </button>
                 </div>
-                <form class="d-flex search-form me-3">
-                    <input class="form-control" type="search" placeholder="Cari game, item, jasa..." aria-label="Search">
+                <form class="d-flex search-form me-3 position-relative">
+                    <div class="search-wrapper position-relative w-100">
+                        <input id="searchInput" class="form-control" type="search" placeholder="Cari game, item, jasa..." aria-label="Search">
+                        <div id="searchPopup" class="search-popup d-none"></div>
+                    </div>
                     <button class="btn btn-search" type="submit">
                         <i class="fas fa-search"></i>
                     </button>
-                </form>
-                <a href="assets/login.html" class="btn btn-login">
+                </form>                                
+                <a href="pages/login.html" class="btn btn-login">
                     <i class="fas fa-user me-2"></i>Login/Daftar
                 </a>
             </div>
@@ -79,32 +82,32 @@
         <div class="container-fluid px-3">
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="kategori-card">
+                    <div class="kategori-card" onclick="location.href='pages/mobile.html'">
                         <img src="assets/images/mobile-game.jpg" class="kategori-img" alt="Mobile Games">
                         <div class="kategori-content">
                             <h3>Mobile Games</h3>
                             <p>Jual atau beli akun Mobile Legends, Free Fire, PUBG Mobile, dan game mobile populer lainnya.</p>
-                            <button class="btn btn-kategori" onclick="window.location.href='assets/mobile.html'">Lihat Produk <i class="fas fa-chevron-right ms-2"></i></button>
+                            <button class="btn btn-kategori" onclick="location.href='pages/mobile.html'">Lihat Produk <i class="fas fa-chevron-right ms-2"></i></button>
                         </div>
                     </div>
                 </div>                
                 <div class="col-md-4">
-                    <div class="kategori-card">
+                    <div class="kategori-card" onclick="location.href='pages/mobile.html'">
                         <img src="assets/images/pc-game.jpg" class="kategori-img" alt="PC Games">
                         <div class="kategori-content">
                             <h3>PC Games</h3>
                             <p>Jual dan beli item Dota 2, CS:GO, Valorant, dan berbagai produk untuk game PC.</p>
-                            <button class="btn btn-kategori" onclick="window.location.href='assets/pc.html'">Lihat Produk <i class="fas fa-chevron-right ms-2"></i></button>
+                            <button class="btn btn-kategori" onclick="location.href='pages/pc.html'">Lihat Produk <i class="fas fa-chevron-right ms-2"></i></button>
                         </div>
                     </div>
                 </div>                
                 <div class="col-md-4">
-                    <div class="kategori-card">
+                    <div class="kategori-card" onclick="location.href='pages/mobile.html'">
                         <img src="assets/images/jasa-game.jpg" class="kategori-img" alt="Joki/Jasa">
                         <div class="kategori-content">
                             <h3>Joki & Jasa</h3>
                             <p>Jasa rank boost, joki, coaching, dan berbagai layanan gaming profesional.</p>
-                            <button class="btn btn-kategori" onclick="window.location.href='assets/jasa.html'">Lihat Jasa <i class="fas fa-chevron-right ms-2"></i></button>
+                            <button class="btn btn-kategori" onclick="location.href='pages/jasa.html'">Lihat Jasa <i class="fas fa-chevron-right ms-2"></i></button>
                         </div>
                     </div>
                 </div>
@@ -121,7 +124,7 @@
         <div class="container-fluid px-3">
             <div class="row g-4">
                 <div class="col-md-3 col-sm-6">
-                    <div class="produk-card">
+                    <div class="produk-card" onclick="location.href='pages/game/mobile-legend.html'">
                         <div class="posisi-relative">
                             <img src="assets/images/ml.jpg" class="produk-img" alt="Mobile Legends Akun">
                             <div class="produk-badge">HOT</div>
@@ -137,7 +140,7 @@
                     </div>
                 </div>                
                 <div class="col-md-3 col-sm-6">
-                    <div class="produk-card">
+                    <div class="produk-card" onclick="location.href='pages/game/valorant.html'">
                         <div class="posisi-relative">
                             <img src="assets/images/valo.jpg" class="produk-img" alt="Valorant Akun">
                             <div class="produk-badge">HOT</div>
@@ -153,7 +156,7 @@
                     </div>
                 </div>                
                 <div class="col-md-3 col-sm-6">
-                    <div class="produk-card">
+                    <div class="produk-card" onclick="location.href='pages/game/worldofwarcraft.html'">
                         <div class="posisi-relative">
                             <img src="assets/images/wow.jpg" class="produk-img" alt="World of Warcraft Coin">
                             <div class="produk-badge">HOT</div>
@@ -169,7 +172,7 @@
                     </div>
                 </div>                
                 <div class="col-md-3 col-sm-6">
-                    <div class="produk-card">
+                    <div class="produk-card" onclick="location.href='pages/game/cs2.html'">
                         <div class="posisi-relative">
                             <img src="assets/images/CS2.jpg" class="produk-img" alt="CS2 Item">
                             <div class="produk-badge">HOT</div>
@@ -262,39 +265,39 @@
             </div>
             <div class="announcement-container">
                 <div class="announcement-card">
-                    <div class="announcement-date">
-                        <span class="day">15</span>
-                        <span class="month">JUN</span>
+                    <div class="announcement-date" onclick="location.href='pages/event/payment.html'">
+                        <span class="day">01</span>
+                        <span class="month">AUG</span>
                         <span class="year">2025</span>
                     </div>
                     <div class="announcement-content">
                         <h3>Maintenance Server</h3>
-                        <p>Akan dilakukan maintenance server pada tanggal 20 Juni 2025 pukul 00:00 - 04:00 WIB. Mohon maaf atas ketidaknyamanannya.</p>
-                        <a href="#" class="read-more">Baca selengkapnya <i class="fas fa-chevron-right"></i></a>
+                        <p>Akan dilakukan maintenance server pada tanggal 1 Agustus 2025 pukul 00:00 - 02:00 WIB. Mohon maaf atas ketidaknyamanannya.</p>
+                        <a href="pages/event/mt.html" class="read-more">Baca selengkapnya <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="announcement-card">
+                <div class="announcement-card" onclick="location.href='pages/event/summer.html'">
                     <div class="announcement-date">
-                        <span class="day">10</span>
-                        <span class="month">JUN</span>
+                        <span class="day">01</span>
+                        <span class="month">AUG</span>
                         <span class="year">2025</span>
                     </div>
                     <div class="announcement-content">
                         <h3>Event Summer Sale</h3>
-                        <p>Rayakan musim panas kali ini di SpawnBridge dengan diskon hingga 50% dan hadiah menarik untuk semua transaksi!</p>
-                        <a href="#" class="read-more">Baca selengkapnya <i class="fas fa-chevron-right"></i></a>
+                        <p>Rayakan musim panas kali ini di SpawnBridge dengan diskon hingga 30% dan hadiah menarik untuk semua transaksi!</p>
+                        <a href="pages/event/summer.html" class="read-more">Baca selengkapnya <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="announcement-card">
+                <div class="announcement-card" onclick="location.href='pages/event/payment.html'">
                     <div class="announcement-date">
-                        <span class="day">05</span>
-                        <span class="month">JUN</span>
+                        <span class="day">08</span>
+                        <span class="month">AUG</span>
                         <span class="year">2025</span>
                     </div>
                     <div class="announcement-content">
                         <h3>Penambahan Metode Pembayaran</h3>
-                        <p>Kami telah menambahkan metode pembayaran baru melalui QRIS untuk kemudahan transaksi Anda.</p>
-                        <a href="#" class="read-more">Baca selengkapnya <i class="fas fa-chevron-right"></i></a>
+                        <p>Kami telah menambahkan metode pembayaran baru melalui Paypal untuk kemudahan transaksi Internasional.</p>
+                        <a href="pages/event/payment.html" class="read-more">Baca selengkapnya <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -310,28 +313,27 @@
                     <h3 class="footer-title">SpawnBridge</h3>
                     <p class="footer-p">Marketplace teraman dan terpercaya untuk kebutuhan gaming Anda. Kami menyediakan jual beli produk game, item, dan jasa gaming dengan harga terbaik.</p>
                     <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/SpawneBridge" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.x.com/SpawnBridge" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/SpawnBridge" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/SpawnBridge" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>                
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h3 class="footer-title">Produk</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Mobile Games</a></li>
-                        <li><a href="#">PC Games</a></li>
-                        <li><a href="assets/">Joki & Jasa</a></li>
+                        <li><a href="pages/mobile.html">Mobile Games</a></li>
+                        <li><a href="pages/pc.html">PC Games</a></li>
+                        <li><a href="pages/jasa.html">Joki & Jasa</a></li>
                     </ul>
                 </div>                
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h3 class="footer-title">Bantuan</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Pusat Bantuan</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Syarat & Ketentuan</a></li>
-                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="pages/help.html">Pusat Bantuan</a></li>
+                        <li><a href="pages/faq.html">FAQ</a></li>
+                        <li><a href="pages/terms.html">Syarat & Ketentuan</a></li>
+                        <li><a href="pages/privacy.html">Kebijakan Privasi</a></li>
                     </ul>
                 </div>                
                 <div class="col-lg-4 col-md-4 mb-4">
@@ -352,6 +354,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
