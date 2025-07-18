@@ -89,125 +89,125 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         title: "Apex Legends",
         tags: [
-          { name: "Akun", url: "pages/game/apex.html" },
-          { name: "Jasa/Joki", url: "pages/game/apex-jasa.html" }
+          { name: "Akun", url: "apex.html" },
+          { name: "Jasa/Joki", url: "apex-jasa.html" }
         ]
       },
       {
         title: "Clash of Clans",
         tags: [
-          { name: "Akun", url: "pages/game/clash-of-clans.html" },
+          { name: "Akun", url: "clash-of-clans.html" },
         ]
       },
       {
         title: "Counter-Strike2",
         tags: [
-          { name: "Akun/Item", url: "pages/game/cs2.html" }
+          { name: "Akun/Item", url: "cs2.html" }
         ]
       },
       {
         title: "Dota 2",
         tags: [
-          { name: "Akun/Item", url: "pages/game/dota2.html" },
-          { name: "Jasa/Joki", url: "pages/game/dota2-jasa.html" }
+          { name: "Akun/Item", url: "dota2.html" },
+          { name: "Jasa/Joki", url: "dota2-jasa.html" }
         ]
       },
       {
         title: "Dragon Nest classic",
         tags: [
-          { name: "Akun/Item", url: "pages/game/dragon-nest.html" },
-          { name: "Jasa/Joki", url: "pages/game/dragon-nest-jasa.html" }
+          { name: "Akun/Item", url: "dragon-nest.html" },
+          { name: "Jasa/Joki", url: "dragon-nest-jasa.html" }
         ]
       },
       {
         title: "Free Fire",
         tags: [
-          { name: "Akun", url: "pages/game/free-fire.html" },
-          { name: "Jasa/Joki", url: "pages/game/free-fire-jasa.html" }
+          { name: "Akun", url: "free-fire.html" },
+          { name: "Jasa/Joki", url: "free-fire-jasa.html" }
         ]
       },
       {
         title: "Genshin Impact",
         tags: [
-          { name: "Akun", url: "pages/game/genshin-impact.html" },
-          { name: "Jasa/Joki", url: "pages/game/genshin-impact-jasa.html" }
+          { name: "Akun", url: "genshin-impact.html" },
+          { name: "Jasa/Joki", url: "genshin-impact-jasa.html" }
         ]
       },
       {
         title: "Honor of Kings",
         tags: [
-          { name: "Akun", url: "pages/game/honor-of-kings.html" },
-          { name: "Jasa/Joki", url: "pages/game/honor-of-kings-jasa.html" }
+          { name: "Akun", url: "honor-of-kings.html" },
+          { name: "Jasa/Joki", url: "honor-of-kings-jasa.html" }
         ]
       },
       {
         title: "Lineage2M",
         tags: [
-          { name: "Akun/Diamond", url: "pages/game/l2m.html" },
-          { name: "Jasa/Joki", url: "pages/game/l2m-jasa.html" }
+          { name: "Akun/Diamond", url: "l2m.html" },
+          { name: "Jasa/Joki", url: "l2m-jasa.html" }
         ]
       },
       {
         title: "Mobile Legends: Bang Bang",
         tags: [
-          { name: "Akun", url: "pages/game/mobile-legend.html" },
-          { name: "Jasa/Joki", url: "pages/game/mobile-legend-jasa.html" }
+          { name: "Akun", url: "mobile-legend.html" },
+          { name: "Jasa/Joki", url: "mobile-legend-jasa.html" }
         ]
       },
       {
         title: "New World",
         tags: [
-          { name: "Akun/Gold", url: "pages/game/new-world.html" }
+          { name: "Akun/Gold", url: "new-world.html" }
         ]
       },
       {
         title: "Odin: Valhalla Rising",
         tags: [
-          { name: "Akun", url: "pages/game/odin.html" },
-          { name: "Jasa/Joki", url: "pages/game/odin-jasa.html" }
+          { name: "Akun", url: "odin.html" },
+          { name: "Jasa/Joki", url: "odin-jasa.html" }
         ]
       },
       {
         title: "Path of Exile 2",
         tags: [
-          { name: "Akun", url: "pages/game/poe.html" },
-          { name: "Jasa/Joki", url: "pages/game/poe2-jasa.html" }
+          { name: "Akun", url: "poe.html" },
+          { name: "Jasa/Joki", url: "poe2-jasa.html" }
         ]
       },
       {
         title: "Point Blank",
         tags: [
-          { name: "Akun", url: "pages/game/point-blank.html" },
-          { name: "Jasa/Joki", url: "pages/game/point-blank-jasa.html" }
+          { name: "Akun", url: "point-blank.html" },
+          { name: "Jasa/Joki", url: "point-blank-jasa.html" }
         ]
       },
       {
         title: "PUBG Mobile",
         tags: [
-          { name: "Akun", url: "pages/game/pubg.html" },
-          { name: "Jasa/Joki", url: "pages/game/pubg-jasa.html" }
+          { name: "Akun", url: "pubg.html" },
+          { name: "Jasa/Joki", url: "pubg-jasa.html" }
         ]
       },
       {
         title: "Toram Online",
         tags: [
-          { name: "Akun", url: "pages/game/toram.html" },
-          { name: "Jasa/Joki", url: "pages/game/toram-jasa.html" }
+          { name: "Akun", url: "toram.html" },
+          { name: "Jasa/Joki", url: "toram-jasa.html" }
         ]
       },
       {
         title: "Valorant",
         tags: [
-          { name: "Akun", url: "pages/game/mobile-legend.html" },
-          { name: "Jasa/Joki", url: "pages/game/mobile-legend-jasa.html" }
+          { name: "Akun", url: "mobile-legend.html" },
+          { name: "Jasa/Joki", url: "mobile-legend-jasa.html" }
         ]
       },
       {
         title: "World of Warcraft",
         tags: [
-          { name: "Akun", url: "pages/game/worldofwarcraft.html" },
-          { name: "Gold/GT", url: "pages/game/worldofwarcraft-coin.html"},
-          { name: "Jasa/Joki", url: "pages/game/worldofwarcraft-jasa.html" }
+          { name: "Akun", url: "worldofwarcraft.html" },
+          { name: "Gold/GT", url: "worldofwarcraft-coin.html"},
+          { name: "Jasa/Joki", url: "worldofwarcraft-jasa.html" }
         ]
       }
     ];
