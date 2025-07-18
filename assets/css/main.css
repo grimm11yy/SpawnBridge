@@ -119,6 +119,22 @@ body {
     list-style: none;
     transition: all 0.3s ease;
 }
+.contact-links li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+.contact-links li i {
+    min-width: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: inherit;
+}
+.contact-links li span {
+    white-space: nowrap;
+}  
 .footer-links a:hover {
     color: var(--lime-accent);
     padding-left: 5px;
@@ -667,5 +683,9 @@ body.dark-mode .announcement-date {
 @media (max-width: 576px) {
     .col-md-4, .col-md-3 {
         width: 100%;
+    }
+    .contact-links li {
+        font-size: 14px;
+        gap: 6px;
     }
 }
