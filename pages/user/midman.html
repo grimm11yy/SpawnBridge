@@ -45,7 +45,7 @@
                         <i class="fas fa-moon"></i>
                         <i class="fas fa-sun"></i>
                     </button>
-                </div>
+                </div> 
                 <form class="d-flex search-form me-3 position-relative">
                     <div class="search-wrapper position-relative w-100">
                         <input id="searchInput" class="form-control" type="search" placeholder="Cari game, item, jasa..." aria-label="Search">
@@ -77,7 +77,6 @@
         <div class="transaction-header">
             <h2>Transaksi Midman <span class="transaction-status status-processing">Dalam Proses</span></h2>
         </div>
-        
         <!-- Transaction Info -->
         <div class="transaction-info">
             <div class="info-row">
@@ -122,9 +121,8 @@
         <div class="chat-container">
             <!-- Participants List -->
             <div class="participants-list">
-                <div class="participant-header">Peserta Transaksi</div>
-                
-                <div class="participant-item active">
+                <div class="participant-header">Peserta Transaksi</div>                
+                <div class="participant-item">
                     <div class="participant-avatar">
                         <i class="fas fa-user"></i>
                     </div>
@@ -133,7 +131,6 @@
                         <p>Pembeli</p>
                     </div>
                 </div>
-                
                 <div class="participant-item">
                     <div class="participant-avatar">
                         <i class="fas fa-user"></i>
@@ -143,7 +140,6 @@
                         <p>Penjual</p>
                     </div>
                 </div>
-                
                 <div class="participant-item">
                     <div class="participant-avatar">
                         <i class="fas fa-user-shield"></i>
@@ -165,62 +161,96 @@
                         <h4>Obrolan Transaksi MID-20230615-001</h4>
                         <p>3 peserta dalam obrolan ini</p>
                     </div>
-                </div>
-                
+                </div>  
                 <div class="chat-messages">
-                    <!-- Admin Message -->
+                        <!-- Admin Message -->
+                        <div class="message message-admin">
+                        <div class="message-header">
+                            <span class="sender">Admin_Raka</span>
+                            <span class="time">14:55</span>
+                        </div>
+                        <div class="message-body">
+                            <p>Pembayaran telah diterima. Admin akan memverifikasi dan memproses transaksi</p>
+                        </div>
+                    </div>                        
                     <div class="message message-admin">
-                        <p>Admin Raka telah bergabung dalam obrolan ini</p>
-                        <div class="message-time">15 Jun 2023, 14:35</div>
+                        <div class="message-header">
+                            <span class="sender">Admin_Raka</span>
+                            <span class="time">14:55</span>
+                        </div>
+                        <div class="message-body">
+                            <p>Transaksi MID-20230615-001 telah disetujui. Silahkan pembeli melakukan pembayaran ke rekening BCA 1234567890 a.n SpawnBridge Midman sebesar Rp 765.000</p>
+                        </div>
                     </div>
-                    
-                    <!-- Admin Message -->
-                    <div class="message message-admin">
-                        <p>Transaksi MID-20230615-001 telah disetujui. Silahkan pembeli melakukan pembayaran ke rekening BCA 1234567890 a.n SpawnBridge Midman sebesar Rp 765.000</p>
-                        <div class="message-time">15 Jun 2023, 14:36</div>
-                    </div>
-                    
                     <!-- Incoming Message -->
                     <div class="message message-incoming">
-                        <div class="message-sender">Joko_ML (Penjual)</div>
-                        <p>Sudah saya kirim detail akunnya ke admin. Nanti setelah pembayaran akan diberikan ke pembeli</p>
-                        <div class="message-time">15 Jun 2023, 14:40</div>
+                        <div class="message-header">
+                            <span class="sender">Joko_ML</span>
+                            <span class="time">14:56</span>
+                        </div>
+                        <div class="message-body">
+                            <p>Sudah saya kirim detail akunnya ke admin. Nanti setelah pembayaran akan diberikan ke pembeli</p>
+                        </div>
                     </div>
-                    
                     <!-- Outgoing Message -->
                     <div class="message message-outgoing">
-                        <div class="message-sender">Anda (Pembeli)</div>
-                        <p>Baik, saya akan transfer sekarang. Mohon ditunggu</p>
-                        <div class="message-time">15 Jun 2023, 14:42</div>
+                        <div class="message-header">
+                            <span class="sender">Anda</span>
+                            <span class="time">14:57</span>
+                        </div>
+                        <div class="message-body">
+                            <p>Baik, saya akan transfer sekarang. Mohon ditunggu</p>
+                        </div>
                     </div>
-                    
                     <!-- Outgoing Message -->
                     <div class="message message-outgoing">
-                        <div class="message-sender">Anda (Pembeli)</div>
-                        <p>Sudah transfer Rp 765.000. Bukti transfer sudah saya upload</p>
-                        <div class="message-time">15 Jun 2023, 14:50</div>
+                        <div class="message-header">
+                            <span class="sender">Joko_ML</span>
+                            <span class="time">14:58</span>
+                        </div>
+                        <div class="message-body">
+                            <p>Sudah transfer Rp 765.000. Bukti transfer sudah saya upload</p>
+                            <img src="#" alt="Bukti Transfer">
+                        </div>
                     </div>
-                    
                     <!-- Admin Message -->
                     <div class="message message-admin">
-                        <p>Pembayaran telah diterima. Admin akan memverifikasi dan memproses transaksi</p>
-                        <div class="message-time">15 Jun 2023, 14:55</div>
+                        <div class="message-header">
+                            <span class="sender">Admin_Raka</span>
+                            <span class="time">14:59</span>
+                        </div>
+                        <div class="message-body">
+                            <p>Pembayaran telah diterima. Admin akan memverifikasi dan memproses transaksi</p>
+                        </div>
                     </div>
-                    
                     <!-- Admin Message -->
                     <div class="message message-admin">
+                        <div class="message-header">
+                            <span class="sender">Admin_Raka</span>
+                            <span class="time">15:05</span>
+                        </div>
+                        <div class="message-body">
                         <p>Pembeli telah menerima akun dan memverifikasi bahwa semua sesuai. Dana akan segera ditransfer ke penjual</p>
-                        <div class="message-time">15 Jun 2023, 15:30</div>
                     </div>
-                    
                     <!-- Admin Message -->
                     <div class="message message-admin">
-                        <p>Transaksi selesai. Dana telah ditransfer ke penjual. Terima kasih telah menggunakan layanan SpawnBridge</p>
-                        <div class="message-time">15 Jun 2023, 15:35</div>
+                        <div class="message-header">
+                            <span class="sender">Admin_Raka</span>
+                            <span class="time">14:55</span>
+                        </div>
+                        <div class="message-body">
+                            <p>Transaksi selesai. Dana telah ditransfer ke penjual. Terima kasih telah menggunakan layanan SpawnBridge</p>
+                        </div>
                     </div>
                 </div>
-                
+            </div>
                 <div class="chat-input">
+                    <div class="file-upload">
+                        <label for="fileInput">
+                            <i class="fas fa-paperclip"></i>
+                            <input type="file" id="fileInput" multiple style="display: none;">
+                        </label>
+                    </div>
                     <input type="text" placeholder="Ketik pesan...">
                     <button type="button"><i class="fas fa-paper-plane"></i></button>
                 </div>
@@ -234,9 +264,6 @@
             </button>
             <button class="action-btn action-btn-primary">
                 <i class="fas fa-check-circle me-2"></i> Konfirmasi Penerimaan
-            </button>
-            <button class="action-btn action-btn-primary">
-                <i class="fas fa-upload me-2"></i> Upload Bukti
             </button>
         </div>
     </div>
