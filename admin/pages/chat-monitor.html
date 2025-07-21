@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpawnBridge Admin | ChatMonitor</title>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- CSS Manual -->
+   <link rel="stylesheet" href="../dist/css/main.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="../../favicon.ico" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="chat-monitor.html" class="nav-link">Chat Monitor</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">2</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+        </div>
+      </li>
+
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">4</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">4 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 1 Transaksi Baru
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 Laporan Baru
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../index.html" class="brand-link">
+      <img src="../../favicon.ico" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">SpawnBridge</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="user-admin.html" class="d-block">Farhan Aulia Kamal</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="../index.html" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="transactions.html" class="nav-link">
+              <i class="nav-icon fas fa-exchange-alt"></i>
+              <p>
+                Transaksi
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="reports.html" class="nav-link">
+              <i class="nav-icon fas fa-exclamation-triangle"></i>
+              <p>
+                Laporan
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="chat-monitor.html" class="nav-link active">
+              <i class="nav-icon fas fa-comments"></i>
+              <p>
+                Chat Monitor
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="users.html" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Pengguna
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="announcements.html" class="nav-link">
+              <i class="nav-icon fas fa-bullhorn"></i>
+              <p>
+                Pengumuman
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="logoutBtn">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+          </li>          
+        </ul>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Chat Monitor</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+              <li class="breadcrumb-item active">Chat Monitor</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+     <!-- Main content -->
+     <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Chat Room Selection -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Chat Rooms</h3>
+                <div class="card-tools">
+                  <div class="input-group input-group-sm">
+                    <input type="text" id="roomSearch" class="form-control" placeholder="Search rooms...">
+                    <div class="input-group-append">
+                      <button class="btn btn-default">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <ul class="nav nav-pills flex-column" id="chatRoomsList">
+                  <li class="nav-item active">
+                    <a href="#" class="nav-link" data-room="apex-legends">
+                      <i class="fas fa-gamepad mr-2"></i> Apex Legends
+                      <span class="badge badge-danger float-right">3</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-room="valorant">
+                      <i class="fas fa-gamepad mr-2"></i> Valorant
+                      <span class="badge badge-warning float-right">2</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-room="mobile-legends">
+                      <i class="fas fa-gamepad mr-2"></i> Mobile Legends
+                      <span class="badge badge-primary float-right">1</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-room="genshin-impact">
+                      <i class="fas fa-gamepad mr-2"></i> Genshin Impact
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-room="general-chat">
+                      <i class="fas fa-comments mr-2"></i> General Chat
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Flagged Messages -->
+            <div class="card mt-3">
+              <div class="card-header">
+                <h3 class="card-title">Flagged Messages</h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <ul class="products-list product-list-in-card" id="flaggedMessagesList">
+                  <li class="item">
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title">
+                        User123 in Apex Legends
+                        <span class="badge badge-danger float-right">Scam</span>
+                      </a>
+                      <span class="product-description">
+                        "Contact me on WhatsApp for cheap coins: 08123456789"
+                      </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title">
+                        User456 in Valorant
+                        <span class="badge badge-warning float-right">Spam</span>
+                      </a>
+                      <span class="product-description">
+                        "Selling accounts! Selling accounts! Selling accounts!"
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <!-- Chat Monitor Panel -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title" id="currentRoomTitle">
+                  <i class="fas fa-gamepad mr-2"></i> Apex Legends Chat
+                </h3>
+                <div class="card-tools">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-tool dropdown-toggle" data-toggle="dropdown">
+                      <i class="fas fa-cog"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#" id="refreshChat"><i class="fas fa-sync-alt mr-2"></i>Refresh</a>
+                      <a class="dropdown-item" href="#" id="clearChat"><i class="fas fa-trash-alt mr-2"></i>Clear Chat</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#" id="muteRoom"><i class="fas fa-volume-mute mr-2"></i>Mute Room</a>
+                      <a class="dropdown-item" href="#" id="closeRoom"><i class="fas fa-times-circle mr-2"></i>Close Room</a>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-tool" data-card-widget="maximize">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="chat-monitor-container">
+                  <div class="chat-messages" id="monitorChatMessages">
+                    <!-- Messages will be loaded here -->
+                    <div class="message">
+                      <div class="message-header">
+                        <img src="../dist/img/avatar.png" alt="User" class="user-avatar">
+                        <span class="username">User123</span>
+                        <span class="timestamp">10:30 AM</span>
+                        <div class="message-actions">
+                          <button class="btn btn-sm btn-warning flag-btn" title="Flag Message">
+                            <i class="fas fa-flag"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger delete-btn" title="Delete Message">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="message-content">
+                        WTS Apex Legends account level 200 with 5 heirlooms
+                      </div>
+                    </div>
+                    <div class="message flagged">
+                      <div class="message-header">
+                        <img src="../dist/img/avatar2.png" alt="User" class="user-avatar">
+                        <span class="username">User456</span>
+                        <span class="timestamp">10:32 AM</span>
+                        <span class="badge badge-danger">Flagged</span>
+                        <div class="message-actions">
+                          <button class="btn btn-sm btn-success approve-btn" title="Approve Message">
+                            <i class="fas fa-check"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger delete-btn" title="Delete Message">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                          <button class="btn btn-sm btn-warning ban-btn" title="Ban User">
+                            <i class="fas fa-ban"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="message-content">
+                        Contact me on WhatsApp for cheap coins: 08123456789
+                      </div>
+                    </div>
+                    <div class="message">
+                      <div class="message-header">
+                        <img src="../dist/img/avatar4.png" alt="User" class="user-avatar">
+                        <span class="username">User789</span>
+                        <span class="timestamp">10:35 AM</span>
+                        <div class="message-actions">
+                          <button class="btn btn-sm btn-warning flag-btn" title="Flag Message">
+                            <i class="fas fa-flag"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger delete-btn" title="Delete Message">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="message-content">
+                        Looking for teammates to play ranked. Currently Plat 2
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Type a message..." id="adminMessageInput">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" id="sendAdminMessage">
+                      <i class="fas fa-paper-plane"></i> Send
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-2">
+                  <button class="btn btn-sm btn-warning" id="toggleAutoRefresh">
+                    <i class="fas fa-sync"></i> Auto Refresh: <span id="autoRefreshStatus">Off</span>
+                  </button>
+                  <div class="btn-group float-right">
+                    <button class="btn btn-sm btn-info" id="exportChat">
+                      <i class="fas fa-download"></i> Export
+                    </button>
+                    <button class="btn btn-sm btn-danger" id="purgeChat">
+                      <i class="fas fa-trash"></i> Purge
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 1.0.0
+    </div>
+    <strong>Copyright &copy; 2025 <a href="../index.html">SpawnBridge</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- Js Manual -->
+ <script src="../dist/js/pages/chat-monitor.js"></script>
+</body>
+</html>
